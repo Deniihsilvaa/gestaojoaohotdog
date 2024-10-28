@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gestaojoaohotdog/static/css/main.d935fe8a.css",
+    "main.js": "/gestaojoaohotdog/static/js/main.9bfe7ed7.js",
+    "static/media/bootstrap-icons.woff?": "/gestaojoaohotdog/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/gestaojoaohotdog/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/logo.png": "/gestaojoaohotdog/static/media/logo.a5eb02846ced6515cbde.png",
+    "index.html": "/gestaojoaohotdog/index.html",
+    "main.d935fe8a.css.map": "/gestaojoaohotdog/static/css/main.d935fe8a.css.map",
+    "main.9bfe7ed7.js.map": "/gestaojoaohotdog/static/js/main.9bfe7ed7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d935fe8a.css",
+    "static/js/main.9bfe7ed7.js"
+  ]
+}
