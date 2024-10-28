@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import AppRoutes from './Hooks/routes';
+import { isAuthenticated } from './services/authService';
+import './styles/App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const location = useLocation();
+    const isLoginRoute = location.pathname === '/';
+    const isErroRoute = location.pathname === '/PDefaut';
+
+    return (
+        <div className='card'>
+            {isAuthenticated() && !isLoginRoute && !isErroRoute&& <Navbar />}
+            <AppRoutes />
+        </div>
+    );
 }
 
-export default App;
+// Componente Wrapper para envolver o App com o Router
+const WrappedApp = () => (
+    <Router>
+        <App />
+    </Router>
+);
+
+export default WrappedApp;

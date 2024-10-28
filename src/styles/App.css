@@ -1,0 +1,62 @@
+/* Estilos para dispositivos com largura maior que 400px */
+body {
+  background-color: #eee;
+  width: 97vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+div#root {
+  width: 98vw;
+  height: auto;
+  position: relative;
+}
+
+.App {
+  /* você pode adicionar estilos aqui se necessário */
+}
+
+.table-container {
+  background-color: #e5e5e5;
+  margin: 20px auto;
+  width: 750px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button.close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Estilos para dispositivos com largura menor que 400px */
+@media (max-width: 400px) {
+  body {
+    background-color: #eee;
+    width: 97vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+ 
+  div#root {
+    margin: 0;
+    padding: 0;
+    width: 98vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .table-container {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,11 @@
+
+.iconCategoria {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.iconCategoria:hover {
+    cursor: pointer;
+}
